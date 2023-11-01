@@ -17,7 +17,7 @@ model:
   n_h: 1
 
 dataset:
-  root_dir: /data/cs.aau.dk/haominyu/cdvae/Dataset/MP_DATA_post/
+  root_dir: Dataset/MP_DATA_post/
   max_num_nbr: 12
   radius: 8
   dmin: 0
