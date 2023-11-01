@@ -49,14 +49,13 @@ The parameters for the pretraining of model can be modified in the config.yaml
 
 Finetuning model:
 
-To train it on the JDFT2D, Dielectric, and KVRH datasets, the run the finetuning on files Matbench_base 
+To fine-tune the pre-trained model on the JDFT2D, Dielectric, and KVRH datasets, run the following command using the Matbench_base files:
 
 ```python
  python finetune.py
 ```
  
-To train it on the Mp_shear, Mp_bulk, Jarvis_gap, Jarvis_ehull and Mp_gap datasets, the run the finetuning on files Matformer_base
-
+To fine-tune  the pre-trained model on the Mp_shear, Mp_bulk, Jarvis_gap, Jarvis_ehull, and Mp_gap datasets, execute the following command using the Matformer_base files:
  ```python
  python finetune.py
 ```
