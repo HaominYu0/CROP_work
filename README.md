@@ -39,9 +39,9 @@ To pre-train the framework, we use a subset  of the Open   Materials Database (O
 The OQMD offers a substantial amount of unlabeled data that proves sufficient for the purpose of pre-training. This dataset includes the data from the Open   Materials Database (OQMD) and is obtained by JARVIS-Tools, an open-access software package for atomistic data-driven materials computation. It has 817,636 material structures. To ensure the quality of the dataset, we filtered out the materials with extreme formation energy that is either above 4.0 or below -5.0. We also filter out a crystal structure \footnote{https://oqmd.org/materials/entry/1339536}  that cannot be successfully loaded. The cleaned dataset contains 817,139 material structures for the pre-training task. Each structure is saved as a CIF file and contains atom type, atom coordinates, and lattice features.
 
 ## Model Training
-The models have been pretrained on the CIF files from the OQMD database. In total, we aggregated 817,139 CIF files for pretraining. The pretrained models, along with their config files, are available in the repository.
+The models have been trained on the CIF files from the OQMD database. In total, we aggregated 817,139 CIF files for pretraining. The pre-trained models, along with their config files, are available in the repository.
 
-To execute the pretrained model, use the following command:
+To execute the pre-trained model, use the following command:
 ```python
  python crop_pretrain.py
 ```
@@ -49,13 +49,11 @@ The parameters for the pretraining of model can be modified in the config.yaml
 
 Finetuning model:
 
-To fine-tune the pre-trained model on the JDFT2D, Dielectric, and KVRH datasets, run the following command using the Matbench_base files:
+To fine-tune the pre-trained model, run the following command using the Finetune files:
 
 ```python
  python finetune.py
 ```
- 
-To fine-tune  the pre-trained model on the Mp_shear, Mp_bulk, Jarvis_gap, Jarvis_ehull, and Mp_gap datasets, execute the following command using the Matformer_base files:
- ```python
- python finetune.py
+
 ```
+Place the dataset in the "Dataset" folder. The pre-trained models should be put into "runs_crop". Downstream trained models will be output to "runs_ft"."
