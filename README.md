@@ -57,3 +57,11 @@ To fine-tune the pre-trained model, run the following command using the Finetune
 
 
 Place the dataset in the "Dataset" folder. The pre-trained models should be put into "runs_crop". Downstream trained models will be output to "runs_ft"."
+
+## References 
+
+In this project, we have referred to and utilized the following resources:
+
+1. https://github.com/txie-93/cdvae - Parts of the code or ideas in this project were based on this.
+2. https://github.com/RishikeshMagar/Crystal-Twins - Parts of the code or ideas in this project were based on this.
+3. https://github.com/topics/graph-isomorphism-network - Parts of the code or ideas in this project were based on this.
