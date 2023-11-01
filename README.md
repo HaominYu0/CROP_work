@@ -34,6 +34,10 @@ Crystal Property Estimation.
 - torchvision==0.14.1
 - tqdm==4.64.0
 
+## Datasets
+To pre-train the framework, we use a subset  of the Open   Materials Database (OQMD) with 817,139 material structures. 
+The OQMD offers a substantial amount of unlabeled data that proves sufficient for the purpose of pre-training. This dataset includes the data from the Open   Materials Database (OQMD) and is obtained by JARVIS-Tools, an open-access software package for atomistic data-driven materials computation. It has 817,636 material structures. To ensure the quality of the dataset, we filtered out the materials with extreme formation energy that is either above 4.0 or below -5.0. We also filter out a crystal structure \footnote{https://oqmd.org/materials/entry/1339536}  that cannot be successfully loaded. The cleaned dataset contains 817,139 material structures for the pre-training task. Each structure is saved as a CIF file and contains atom type, atom coordinates, and lattice features.
+
 ## Model Training
 The models have been pretrained on the cif files in the OQMD database. In total we aggregate 817,139  cif files for the pretraining. The pretrained models along along with their config files are made available in the repository. 
 
