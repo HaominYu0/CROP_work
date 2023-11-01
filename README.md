@@ -1,5 +1,5 @@
 # CROP
-This is a PyTorch implementation of the paper:A Crystal Knowledge-enhanced Pre-training Framework for
+This is a PyTorch implementation of the paper: A Crystal Knowledge-enhanced Pre-training Framework for
 Crystal Property Estimation.
 `@author:Haomin Yu, Yanru Song, Jilin Hu, Chenjuan Guo, Bin Yang, Christian S. Jensen`
 
